@@ -1,7 +1,7 @@
 import streamlit as st
 import streamlit.components.v1 as components
 import pickle
-import tensorflow as tf
+
 from tensorflow import keras
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.text import Tokenizer
