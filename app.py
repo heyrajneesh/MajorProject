@@ -1,9 +1,18 @@
 import streamlit as st
-import numpy as np
+import streamlit.components.v1 as components
 import pickle
-
-from keras.models import load_model
-from keras.preprocessing.sequence import pad_sequences
+import tensorflow as tf
+from tensorflow import keras
+from tensorflow.keras.models import load_model
+from tensorflow.keras.preprocessing.text import Tokenizer
+from pathlib import Path
+import streamlit_authenticator as stauth
+from supabase import create_client, Client
+import os
+from dotenv import load_dotenv
+import numpy as np
+import speech_recognition as sr
+import pandas as pd
 
 # 🔹 Page config
 st.set_page_config(
